@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap");
+
+body {
+  justify-content: center;
+  background-color: #110f14;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.app-container {
+  width: 540px;
+}
+
+.password-container {
+  background-color: #24232c;
+  height: 50px;
+  color: #e6e5ea;
+}
+
+.app-name-container h2 {
+  color: #817d92;
+  background-color: #110f14;
+  justify-content: center;
+  display: flex;
+}
+
+.container h2 {
+  font-size: 18px;
+  padding-left: 25px;
+  padding-top: 30px;
+}
+
+.password-container h2 {
+  padding-left: 25px;
+  padding-top: 8px;
+}
+
+.container {
+  background-color: #24232c;
+  height: 520px;
+  color: #e6e5ea;
+}
+
+.action-button {
+  background-color: #a4ffaf;
+  color: #24232c;
+  width: 476px;
+  height: 65px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 40px;
+  border-radius: 0;
+  font-weight: 650;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.action-button {
+  letter-spacing: 0.5px;
+}
+
+.action-button::after {
+  content: "";
+  padding-left: 8px;
+}
+
+.action-button:hover {
+  background-color: #24232c;
+  color: #a4ffaf;
+  border: 2px solid #a4ffaf;
+}
+
+.password-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+
+  background-color: #24232c;
+}
+
+.password-text {
+  font-size: 32px;
+  padding-left: 20px;
+}
+
+.default-text {
+  color: #817d92;
+}
+
+.copy-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.strength-text {
+  display: inline-grid;
+  width: 476px;
+  margin-top: 19px;
+  margin-left: 10px;
+}
+
+.password-strength {
+  background-color: #18171f;
+  margin-left: 32px;
+  width: 476px;
+  display: flex;
+  height: 72px;
+  margin-top: 52px;
+}
+
+.strength-bars {
+  font-size: 1.5rem;
+  color: #e6e5ea;
+  margin-top: 14px;
+}
+
+button {
+  background-color: #f9f9f900;
+  padding-left: 70px;
+}
+
+.custom-list input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.custom-list input[type="checkbox"]:checked::before {
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-list input[type="checkbox"]:checked {
+  background: #a4ffaf;
+}
+
+.custom-list li {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 16px;
+}
+
+.password-strength-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(24, 23, 31, 1);
+  padding: 1rem 1.5rem;
+  width: 428px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.strength-label {
+  font-size: 18px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.strength-details {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.strength-level {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.strength-level {
+  font-size: 26px;
+  margin-left: 119px;
+}
+
+.strength-bars {
+  display: flex;
+  gap: 0.3rem;
+  margin-bottom: 10px;
+}
+
+.bar {
+  width: 9px;
+  height: 33px;
+  background-color: rgba(24, 23, 31, 1);
+  border: 2px solid transparent;
+}
+
+.bar:not(.too-weak):not(.weak):not(.medium):not(.strong) {
+  border-color: #fff;
+}
+
+.bar.too-weak {
+  background-color: #ff4d4d;
+}
+
+.bar.weak {
+  background-color: #fb7c58;
+}
+
+.bar.medium {
+  background-color: #f8cd65;
+}
+
+.bar.strong {
+  background-color: #a4ffaf;
+}
+
+.strength-level {
+  font-size: 24px;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.slider-value {
+  position: absolute;
+  top: -53px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #a4ffaf;
+  padding: 2px 5px;
+  border-radius: 4px;
+  transform: translateX(-50%);
+  margin-left: 496px;
+}
+
+.slider {
+  width: 90%;
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  background: #ddd;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: -9px;
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  background: #e6e5ea;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  background: #e6e5ea;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  background: #e6e5ea;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  background: #e6e5ea;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background: #000;
+  border: 2px solid #a4ffaf;
+}
+
+.slider::-moz-range-thumb:hover {
+  background: #000;
+  border: 2px solid #a4ffaf;
+}
+
+.custom-list label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-list input[type="checkbox"] {
+  margin-right: 18px;
+}
+
+.copied-text {
+  font-size: 14px;
+  color: #a4ffaf;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.copy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.copy-button:focus {
+  outline: none;
+}
+.copied-text {
+  display: inline;
+}
+
+@media (max-width: 690px) {
+  .app-container {
+    width: 329px;
+  }
+  .copied-text {
+    display: none;
+  }
+  .password-strength-container {
+    width: 260px;
+  }
+
+  .action-button {
+    width: 306px;
+  }
+
+  .slider-value {
+    margin-left: 294px;
+  }
+  .strength-level {
+    font-size: 19px;
+  }
+
+  .strength-level {
+    margin-left: 42px;
+    padding-right: 14px;
+  }
+  .password-text {
+    font-size: 20px;
+    padding-left: 5px;
+  }
+}
