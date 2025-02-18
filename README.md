@@ -49,5 +49,5 @@ export default tseslint.config({
 })
 ```
 
-![Uploading image.png…]()
+
 
